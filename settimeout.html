@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time out and interval</title>
+</head>
+<body>
+    <button id="btn">clear</button>
+    <script>
+        let timeout = setTimeout(func, 5000);
+        function func(){
+            alert("pls subscribe...")
+        };
+
+        // if(){
+        //     clearTimeout(timeout);
+        // }
+
+        let interval = setInterval(fun, 2000);
+        function fun(){
+            console.log("hello...")
+        };
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener('click', function(){
+            clearInterval(interval);
+        });
+    </script>
+</body>
+</html>

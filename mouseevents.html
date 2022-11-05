@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(28, 22, 179);
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="fun()"></div>
+    <div id="box1" oncontextmenu="fun()"></div>
+    <div id="box2" ondblclick="fun()"></div>
+    <div id="box3" onmousedown="fun()"></div>
+    <div id="box4" onmouseup="fun()"></div>
+
+    <script>
+        function fun(){
+            alert("click event");
+        }
+
+        function fun(){
+            alert("right click event");
+        }
+
+        function fun(){
+            alert("double click event");
+        }
+
+        function fun(){
+            alert("event activated");
+        }
+
+        function fun(){
+            alert("event activated");
+        }
+    </script>
+</body>
+</html>
